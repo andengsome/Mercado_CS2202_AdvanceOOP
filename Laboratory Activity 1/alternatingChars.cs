@@ -1,6 +1,6 @@
 using System;
 
-public class SquarePattern
+public class AlteringChars
 {
     public static void Main(string[] args)
     {
