@@ -1,0 +1,40 @@
+using System;
+
+public class FinalTotal
+{
+    public static void Main(string[] args)
+    {
+        int total = 10;
+        
+        Console.Write ("Enter an integer: ");
+        int num = int.Parse(Console.ReadLine());
+        
+        if (num > 0)
+        {
+            if (num % 2 == 1)
+            {
+                total += (num * num * num);
+                Console.WriteLine ("The number is odd.");
+                Console.Write (total);
+            }
+            else
+            {
+                total += (num * num);
+                Console.WriteLine ("The number is even.");
+                Console.Write (total);   
+            }
+        }
+        else if (num < 0)
+        {
+            Console.Write ("Enter another integer: ");
+            int exp = int.Parse(Console.ReadLine());
+            
+            total += (int)Math.Pow(num, exp);
+            Console.Write (total);
+        }
+        else
+        {
+            Console.Write ("Nothing happened.");
+        }
+    }
+}
